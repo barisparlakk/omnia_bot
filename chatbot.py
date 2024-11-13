@@ -25,7 +25,7 @@ class Chatbot:
             city = input("Which city or town would you like to know the weather for?")
             return self.get_weather(city)
 
-    
+
 
 class WeatherBot(Chatbot):
     def __init__(self, weather_api_key):
@@ -37,7 +37,6 @@ class WeatherBot(Chatbot):
         response = requests.get(url)
         weather_data = response.json()
         return f"The weather in {city} is {weather_data['weather'][0]['description']}"
-
 
 
 
