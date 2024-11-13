@@ -41,3 +41,19 @@ class WeatherBot(Chatbot):
 
 
 
+class ReminderBot(Chatbot):
+    def __init__(self, reminder):
+        super().__init__("Reminder Bot")
+        self.reminder = reminder
+
+    def create_reminder(self):
+        pass
+    def get_reminder(self):
+        pass
+    def delete_reminder(self):
+        pass
+    
+
+
+
+
