@@ -39,8 +39,6 @@ class WeatherBot(Chatbot):
         return f"The weather in {city} is {weather_data['weather'][0]['description']}"
 
 
-
-
 class ReminderBot(Chatbot):
     def __init__(self, reminder):
         super().__init__("Reminder Bot")
@@ -52,7 +50,9 @@ class ReminderBot(Chatbot):
         pass
     def delete_reminder(self):
         pass
-    
+
+    def generate_response(self, user_input):
+        if "reminder" in user_input.lower():
 
 
 
