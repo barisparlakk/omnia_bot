@@ -53,6 +53,7 @@ class ReminderBot(Chatbot):
 
     def generate_response(self, user_input):
         if "reminder" in user_input.lower():
+            return "What's the topic of the reminder? "
 
 
 
